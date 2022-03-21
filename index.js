@@ -5,13 +5,13 @@ const submitBtn = document.getElementById('submit');
 
 var isVisible = true;
 
-// Click event for each rate button 
-rateBtn.forEach((btn)=> {
-    btn.addEventListener("click", (event) =>{
-        console.log(event.target);
-    });
-});
+// Get value of each button
+const buttonValue = (ele) => {
+    var btnValue = ele.innerText;
+    console.log(btnValue);
+}
 
+//toggle card visibility  button
 const hideRateCard = () =>{
     document.getElementById('rate-card').style.display = 'none';
     document.getElementById('thank-you-card').style.display = 'block';
@@ -20,12 +20,13 @@ const showRateCard = () => {
     document.getElementById('rate-card').style.display = 'block';
     document.getElementById('thank-you-card').style.display = 'none';
 }
-//Submit button
-const toggleVisibility = () => {
+const toggleVisibility = (event) => {
+    event.preventDefault(); 
     if (isVisible == true){
         hideRateCard();
     }else{
         showRateCard();
     }
 }
+
 
