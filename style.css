@@ -1,9 +1,9 @@
 :root{
-    --orange: hsl(25, 97%, 53%);
+    --orange: #f37615;
     --white: hsl(0, 0%, 100%);
     --lightGrey: hsl(217, 12%, 63%);
-    --mediumGrey: hsl(216, 12%, 54%);
-    --darkBlue: hsl(213, 19%, 18%);
+    --mediumGrey: #262f36;
+    --darkBlue: #1f2530;
     --veryDarkBlue: hsl(216, 12%, 8%);
 }
 
@@ -31,4 +31,32 @@ body{
 .title{
     color: var(--white);
     font-weight: 500;
+}
+.text{
+    margin-bottom: 20px;
+}
+.ratings{
+    margin-bottom: 40px;
+}
+.rate-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button{
+    background-color: var(--mediumGrey);
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 100%;
+    border: none;
+    color: var(--lightGrey);
+}
+.submit-btn{
+    border-radius: 30px;
+    border: none;
+    background-color: var(--orange);
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 0;
 }
